@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/python,vscode
-# Edit at https://www.toptal.com/developers/gitignore?templates=python,vscode
+# Created by https://www.toptal.com/developers/gitignore/api/python,vscode,qml,qt
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,vscode,qml,qt
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -151,6 +151,62 @@ Thumbs.db
 .prof
 
 
+### QML ###
+# Cached binary representations of QML and JS files
+*.qmlc
+*.jsc
+
+### Qt ###
+# C++ objects and libs
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so.*
+*.dll
+*.dylib
+
+# Qt-es
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile*
+*build-*
+*.qm
+*.prl
+
+# Qt unit tests
+target_wrapper.*
+
+# QtCreator
+*.autosave
+
+# QtCreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+# QtCreator CMake
+CMakeLists.txt.user*
+
+# QtCreator 4.8< compilation database 
+compile_commands.json
+
+# QtCreator local machine specific files for imported projects
+*creator.user*
+
 ### vscode ###
 .vscode/*
 !.vscode/settings.json
@@ -159,4 +215,4 @@ Thumbs.db
 !.vscode/extensions.json
 *.code-workspace
 
-# End of https://www.toptal.com/developers/gitignore/api/python,vscode
+# End of https://www.toptal.com/developers/gitignore/api/python,vscode,qml,qt
