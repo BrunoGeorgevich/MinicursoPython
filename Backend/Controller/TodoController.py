@@ -13,7 +13,7 @@ class TodoItems(Items):
         if 0 <= index.row() < self.rowCount() and index.isValid():
             item = self.entries[index.row()]
             if role == self.DescriptionRole:
-                return item.description
+                return item._description
         else:
             return None
 
@@ -21,6 +21,7 @@ class TodoItems(Items):
         roles = dict()
         roles[self.DescriptionRole] = b'description'
         return roles
+
 
 class TodoController(Controller):
     # Constructor

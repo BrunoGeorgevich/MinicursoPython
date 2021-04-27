@@ -1,8 +1,5 @@
 import sys
 import os
-import logging
-import logging.config
-from pathlib import Path
 
 from PySide2.QtWidgets import QApplication
 from PySide2.QtQml import QQmlApplicationEngine
